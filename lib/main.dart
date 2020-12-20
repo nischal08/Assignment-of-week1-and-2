@@ -1,3 +1,4 @@
+import 'package:assignment_1_facebook_posts/screens/detailPage.dart';
 import 'package:assignment_1_facebook_posts/screens/home.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,10 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Home(),
+      routes: {
+        '/home': (context) => Home(),
+        '/detail': (context) => Detail(),
+      },
     );
   }
 }
