@@ -37,24 +37,30 @@ class Detail extends StatelessWidget {
                       children: [
                         Positioned(
                           child: CircleAvatar(
-                            radius: 10,
+                            radius: 15,
                             backgroundImage: AssetImage("assets/heart.png"),
                           ),
                         ),
                         Positioned(
                           right: 15,
                           child: CircleAvatar(
-                            radius: 10,
+                            radius: 15,
                             backgroundImage: AssetImage("assets/like.png"),
                           ),
                         ),
                       ],
                     ),
                   ),
-                  Text("${likes}K"),
+                  Text(
+                    "${likes}K",
+                    style: TextStyle(fontSize: 22),
+                  ),
                 ]),
                 Row(children: [
-                  Text("${comments} Comments . ${shares} Shares"),
+                  Text(
+                    "${comments} Comments . ${shares} Shares",
+                    style: TextStyle(fontSize: 22),
+                  ),
                 ]),
               ],
             ),

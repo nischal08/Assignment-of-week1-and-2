@@ -14,6 +14,7 @@ class Home extends StatelessWidget {
   Widget _Body(context) {
     return ListView(
       children: [
+        GeneralSizedBox(height: 5),
         _Card(
             userIcon: "assets/user3.png",
             name: "Niraj Karanjeet",
@@ -43,6 +44,7 @@ class Home extends StatelessWidget {
                         )),
               );
             }),
+        GeneralSizedBox(height: 5),
         _Card(
             userIcon: "assets/user2.jpg",
             name: "Supriya Maskey",
@@ -71,6 +73,7 @@ class Home extends StatelessWidget {
                         )),
               );
             }),
+        GeneralSizedBox(height: 5),
         _Card(
             userIcon: "assets/user1.jpg",
             name: "Sujan Shrestha",
@@ -100,6 +103,7 @@ class Home extends StatelessWidget {
                 ),
               );
             }),
+        GeneralSizedBox(height: 5),
       ],
     );
   }
